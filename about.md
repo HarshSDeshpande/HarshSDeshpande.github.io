@@ -4,7 +4,7 @@ title: About
 ---
 
 <p class="message">
-  Hey there! I'm Harsh Deshpande, a Computer Science senior undergrad at BITS Pilani Pilani campus.
+  Hey there! I'm Harsh Deshpande, a Computer Science Senior Undergrad at BITS Pilani Pilani campus.
 </p>
 
 In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
