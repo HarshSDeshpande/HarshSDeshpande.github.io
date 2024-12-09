@@ -532,6 +532,17 @@ a.pagination-item:hover {
   color: #8f5536;
 }
 
+/* Dark Theme */
+.theme-dark body {
+  background-color: #1e1e1e;
+  color: #c7c7c7;
+}
+.theme-dark a {
+  color: #569cd6;
+}
+.theme-dark .sidebar {
+  background-color: #252526;
+}
 
 /*
  * Overlay sidebar
