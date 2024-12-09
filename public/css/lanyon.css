@@ -537,11 +537,43 @@ a.pagination-item:hover {
   background-color: #1e1e1e;
   color: #c7c7c7;
 }
+
+.theme-dark .container {
+  background-color: #1e1e1e;
+}
+
+.theme-dark .masthead {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+.theme-dark .masthead-title,
+.theme-dark .masthead-title a {
+  color: #c7c7c7;
+}
+
+.theme-dark .post {
+  background-color: #1e1e1e;
+}
+
+.theme-dark hr {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #444;
+}
+
+.theme-dark pre,
+.theme-dark code {
+  background-color: #2d2d2d;
+  color: #c7c7c7;
+}
+
 .theme-dark a {
   color: #569cd6;
 }
-.theme-dark .sidebar {
-  background-color: #252526;
+
+.theme-dark h1, .theme-dark h2, .theme-dark h3,
+.theme-dark h4, .theme-dark h5, .theme-dark h6 {
+  color: #c7c7c7;
 }
 
 /*
