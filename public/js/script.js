@@ -13,8 +13,10 @@
     checkbox.checked = false;
   }, false);
 
-  const toggleButton = document.getElementById('theme-toggle');
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('theme-dark');
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', function() {
+      document.body.classList.toggle('theme-dark');
+    });
   });
 })(document);
