@@ -38,7 +38,6 @@ These are some projects I've worked on in my attempt to become a cracked dev. Th
 
 ## Medical Centre Management System
 #### [Code](https://github.com/HarshSDeshpande/Medical_Centre_Management_System)
--  Java Application to buy medicines and book appointments in a real time environment. Implemented a mut
-lithreaded application demonstrating Object Oriented Programming Principles
+-  Java Application to buy medicines and book appointments in a real time environment. Implemented a multithreaded application demonstrating Object Oriented Programming Principles
 
 
