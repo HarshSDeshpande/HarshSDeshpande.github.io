@@ -8,7 +8,11 @@ These are some projects I've worked on in my attempt to become a cracked dev. Th
 
 ## Automated Pipeline to Generate Posters for Welfare Schemes
 #### [Code](https://github.com/HarshSDeshpande/NLP-Project)
-- 
+- Designed and implemented a pipeline to generate posters for a welfare scheme given a thorough description of
+ the welfare scheme.
+- Implemented the PRISM method within the pipeline as introduced in the paper He, Y., Robey, A., Murata, N.,
+ Jiang, Y., Williams, J., Pappas, G. J., Hassani, H., Mitsufuji, Y., Salakhutdinov, R., & Kolter, J. Z. (2024). Automated
+ black-box prompt engineering for personalized text-to-image generation.
 
 ## Compiler for a Toy Language
 #### [Code](https://github.com/AD-lite24/Compiler-Construction-Project)
