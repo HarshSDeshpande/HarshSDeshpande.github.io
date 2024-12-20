@@ -11,7 +11,7 @@ url: experience
 
 ### Selected Research Experience
 
-#### <img src="../assets/bits_logo.jpg" width="60" height="60" style="float: right"> Research Assistant ADAPT Lab (Jan'24- Present)
+#### <img src="../assets/bits_logo.jpg" width="60" height="60" style="float: right"> Research Assistant at ADAPT Lab (Jan'24- Present)
 ##### Advisor: Prof. Poonam Goyal
 - Worked on Multimodal Visual Question Answering for Advertisements.
 - Worked on Concealed Weapon Detection using Thermal Images
