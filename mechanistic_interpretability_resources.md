@@ -16,3 +16,6 @@ This is just some random stuff I'm working on out of interest in Mechanistic Int
 
 ##### [Implementing a Transformer from Scratch](https://github.com/HarshSDeshpande/transformer_from_scratch)
 ##### [Reverse-engineering Induction Circuits](https://github.com/HarshSDeshpande/induction_circuits)
+
+Some other random stuff:
+##### [Learning about Contrastive Learing](https://github.com/HarshSDeshpande/Contrastive_Learning)
