@@ -9,51 +9,92 @@
   margin-bottom: 0;
 }
 
-/* Theme Toggle Button in Header */
-.theme-toggle-header {
-  width: 38px;
-  height: 38px;
+/* Anthropic-style Theme Switch */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  position: relative;
+  width: 62px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.theme-switch:focus {
+  outline: none;
+}
+
+.theme-switch:hover .theme-switch-track {
+  background-color: #cbd5e1;
+}
+
+html.theme-dark .theme-switch:hover .theme-switch-track {
+  background-color: #475569;
+}
+
+.theme-switch-track {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #e2e8f0;
+  transition: background-color 0.3s ease;
+}
+
+html.theme-dark .theme-switch-track {
+  background-color: #334155;
+}
+
+.theme-switch-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
-  padding: 0;
+  transform: translateX(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.theme-toggle-header:hover {
-  background-color: rgba(0,0,0,0.05);
+html.theme-dark .theme-switch-thumb {
+  transform: translateX(30px);
+  background-color: #1e293b;
 }
 
-html.theme-dark .theme-toggle-header:hover {
-  background-color: rgba(255,255,255,0.1);
+.theme-switch svg {
+  width: 16px;
+  height: 16px;
+  transition: opacity 0.2s ease;
 }
 
-.theme-toggle-header svg {
-  width: 22px;
-  height: 22px;
-  transition: all 0.3s ease;
+.theme-switch .light-icon {
+  color: #f59e0b;
+  opacity: 1;
 }
 
-.theme-toggle-header .sun-icon {
-  display: none;
-  color: #f39c12;
+.theme-switch .dark-icon {
+  color: #94a3b8;
+  opacity: 0;
+  position: absolute;
 }
 
-.theme-toggle-header .moon-icon {
-  display: block;
-  color: #34495e;
+html.theme-dark .theme-switch .light-icon {
+  opacity: 0;
 }
 
-html.theme-dark .theme-toggle-header .sun-icon {
-  display: block;
-}
-
-html.theme-dark .theme-toggle-header .moon-icon {
-  display: none;
+html.theme-dark .theme-switch .dark-icon {
+  opacity: 1;
 }
 
 /* Make theme toggle responsive */
@@ -63,7 +104,7 @@ html.theme-dark .theme-toggle-header .moon-icon {
     align-items: center;
   }
   
-  .theme-toggle-header {
+  .theme-switch-wrapper {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -77,8 +118,8 @@ html, body {
 
 html.theme-dark, 
 html.theme-dark body {
-  background-color: #1e1e1e;
-  color: #c7c7c7;
+  background-color: #0f172a;
+  color: #e2e8f0;
 }
 
 html.theme-dark .container {
@@ -86,64 +127,64 @@ html.theme-dark .container {
 }
 
 html.theme-dark .masthead {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #1e293b;
 }
 
 html.theme-dark .masthead-title,
 html.theme-dark .masthead-title a {
-  color: #c7c7c7;
+  color: #f8fafc;
 }
 
 html.theme-dark h1, html.theme-dark h2, html.theme-dark h3,
 html.theme-dark h4, html.theme-dark h5, html.theme-dark h6 {
-  color: #e0e0e0;
+  color: #f8fafc;
 }
 
 html.theme-dark a {
-  color: #4dabf7;
+  color: #38bdf8;
 }
 
 html.theme-dark pre,
 html.theme-dark code {
-  background-color: #2d2d2d;
-  color: #c7c7c7;
+  background-color: #1e293b;
+  color: #e2e8f0;
 }
 
 html.theme-dark hr {
-  border-top: 1px solid #333;
+  border-top: 1px solid #1e293b;
 }
 
 html.theme-dark .related {
-  border-top: 1px solid #333;
+  border-top: 1px solid #1e293b;
 }
 
 html.theme-dark .pagination-item {
-  border: 1px solid #333;
+  border: 1px solid #1e293b;
 }
 
 html.theme-dark a.pagination-item:hover {
-  background-color: #2d2d2d;
+  background-color: #1e293b;
 }
 
 html.theme-dark .sidebar-toggle {
-  color: #c7c7c7;
-  background-color: #333;
+  color: #f8fafc;
+  background-color: #1e293b;
 }
 
 /* Dark mode sidebar adjustments */
 html.theme-dark .sidebar {
-  background-color: #252525;
+  background-color: #0f172a;
 }
 
 html.theme-dark .sidebar-nav {
-  border-bottom: 1px solid rgba(255,255,255,.15);
+  border-bottom: 1px solid #1e293b;
 }
 
 html.theme-dark .sidebar-nav-item {
-  border-top: 1px solid rgba(255,255,255,.15);
+  border-top: 1px solid #1e293b;
 }
 
 html.theme-dark a.sidebar-nav-item:hover,
 html.theme-dark a.sidebar-nav-item:focus {
-  background-color: rgba(255,255,255,.15);
+  background-color: #1e293b;
 }
