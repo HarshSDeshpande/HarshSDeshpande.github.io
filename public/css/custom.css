@@ -135,15 +135,34 @@ html.theme-dark .wrap > .container:not(.masthead .container) {
   background-color: #0f172a;
 }
 
-/* Keep original background for masthead in dark mode with proper spacing */
+/* Modern design with curved transition for dark mode */
 html.theme-dark .masthead {
-  background-color: #fff; /* Original white background */
-  border-bottom: 1px solid #eee; /* Original border color */
-  margin-bottom: 0; /* Remove default margin for better separation */
+  background-color: #fff;
+  border-bottom: none;
+  margin-bottom: 0;
+  position: relative;
+}
+
+/* Create curved transition between light header and dark content */
+html.theme-dark .masthead::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  box-shadow: 0 10px 0 #0f172a;
+  z-index: 1;
 }
 
 html.theme-dark .content {
-  padding-top: 3rem; /* Add top padding to replace the margin */
+  padding-top: 50px;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
 }
 
 /* Keep original color for masthead title in dark mode */
@@ -157,13 +176,29 @@ html.theme-dark h4, html.theme-dark h5, html.theme-dark h6 {
   color: #f8fafc;
 }
 
-/* Dark mode for posts and content */
+/* Dark mode for posts and content with modern styling */
 html.theme-dark .post,
-html.theme-dark .page,
-html.theme-dark article,
-html.theme-dark section,
-html.theme-dark .related {
+html.theme-dark .page {
   background-color: #0f172a !important;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+html.theme-dark .post:hover,
+html.theme-dark .page:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Post image styling */
+html.theme-dark .post img {
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: filter 0.3s ease;
+  filter: brightness(0.95);
 }
 
 /* Reset any elements that might have backgrounds */
@@ -175,6 +210,8 @@ html.theme-dark * {
 html.theme-dark pre,
 html.theme-dark code {
   background-color: #1e293b !important;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
 }
 
 html.theme-dark .sidebar {
@@ -184,6 +221,16 @@ html.theme-dark .sidebar {
 html.theme-dark .sidebar-toggle:active,
 html.theme-dark #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #1e293b !important;
+}
+
+/* Style the related section */
+html.theme-dark .related {
+  background-color: #0f172a !important;
+  border-top: 1px solid #1e293b;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 html.theme-dark .page-title,
@@ -196,19 +243,36 @@ html.theme-dark .post-date {
   color: #94a3b8;
 }
 
-/* Dark mode for social links */
+/* Modern social links styling for dark mode */
+html.theme-dark .social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 html.theme-dark .social-links a {
   color: #94a3b8;
+  background-color: #1e293b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 html.theme-dark .social-links a:hover {
-  color: #38bdf8;
+  color: #f8fafc;
+  background-color: #38bdf8;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
 }
 
-/* Dark mode for images in posts */
-html.theme-dark .post img {
-  filter: brightness(0.9);
-}
+/* This is now handled in the post styling section above */
 
 html.theme-dark a {
   color: #38bdf8;
