@@ -12,15 +12,24 @@
     <div class="wrap">
       <div class="masthead">
         <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
+          <div class="masthead-wrapper">
+            <h3 class="masthead-title">
+              <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+              <small>{{ site.tagline }}</small>
+            </h3>
+            <button class="theme-toggle-header" id="theme-toggle" aria-label="Toggle dark mode">
+              <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"/>
+              </svg>
+              <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm7.071 3.929a1 1 0 0 1 0 1.414l-1.414 1.414a1 1 0 1 1-1.414-1.414l1.414-1.414a1 1 0 0 1 1.414 0zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm-8 4a1 1 0 0 1 1 1 7 7 0 0 0 7 7 1 1 0 1 1 0 2 9 9 0 0 1-9-9 1 1 0 0 1 1-1zm.929-4.071a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 1 1-1.414 1.414L5.93 9.344a1 1 0 0 1 0-1.414zM12 20a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zm7.071-1.929a1 1 0 0 1 0 1.414l-1.414 1.414a1 1 0 1 1-1.414-1.414l1.414-1.414a1 1 0 0 1 1.414 0zM19 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1z"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="container content">
-        <!-- <button id="theme-toggle">Toggle Dark Mode</button> -->
         {{ content }}
       </div>
     </div>
