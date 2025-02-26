@@ -122,8 +122,11 @@ html.theme-dark body {
   color: #e2e8f0;
 }
 
-html.theme-dark .container {
-  background-color: transparent;
+/* Ensure all container elements have the same background */
+html.theme-dark .container,
+html.theme-dark .wrap,
+html.theme-dark .content {
+  background-color: #0f172a;
 }
 
 html.theme-dark .masthead {
@@ -140,9 +143,33 @@ html.theme-dark h4, html.theme-dark h5, html.theme-dark h6 {
   color: #f8fafc;
 }
 
-/* Dark mode for posts */
-html.theme-dark .post {
-  background-color: #0f172a;
+/* Dark mode for posts and content */
+html.theme-dark .post,
+html.theme-dark .page,
+html.theme-dark article,
+html.theme-dark section,
+html.theme-dark .related {
+  background-color: #0f172a !important;
+}
+
+/* Reset any elements that might have backgrounds */
+html.theme-dark * {
+  background-color: inherit;
+}
+
+/* Override with specific colors where needed */
+html.theme-dark pre,
+html.theme-dark code {
+  background-color: #1e293b !important;
+}
+
+html.theme-dark .sidebar {
+  background-color: #0f172a !important;
+}
+
+html.theme-dark .sidebar-toggle:active,
+html.theme-dark #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #1e293b !important;
 }
 
 html.theme-dark .page-title,
