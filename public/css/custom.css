@@ -38,6 +38,13 @@ html.theme-dark .theme-switch:hover .theme-switch-track {
   background-color: #475569;
 }
 
+/* Make sure masthead and its elements keep original background color in dark mode */
+html.theme-dark .masthead,
+html.theme-dark .masthead-wrapper,
+html.theme-dark .theme-switch-wrapper {
+  background-color: #fff;
+}
+
 .theme-switch-track {
   position: relative;
   width: 100%;
@@ -122,20 +129,27 @@ html.theme-dark body {
   color: #e2e8f0;
 }
 
-/* Ensure all container elements have the same background */
-html.theme-dark .container,
-html.theme-dark .wrap,
-html.theme-dark .content {
+/* Ensure content area has dark background but masthead container remains light */
+html.theme-dark .content,
+html.theme-dark .wrap > .container:not(.masthead .container) {
   background-color: #0f172a;
 }
 
+/* Keep original background for masthead in dark mode with proper spacing */
 html.theme-dark .masthead {
-  border-bottom: 1px solid #1e293b;
+  background-color: #fff; /* Original white background */
+  border-bottom: 1px solid #eee; /* Original border color */
+  margin-bottom: 0; /* Remove default margin for better separation */
 }
 
+html.theme-dark .content {
+  padding-top: 3rem; /* Add top padding to replace the margin */
+}
+
+/* Keep original color for masthead title in dark mode */
 html.theme-dark .masthead-title,
 html.theme-dark .masthead-title a {
-  color: #f8fafc;
+  color: #505050; /* Original color from lanyon.css */
 }
 
 html.theme-dark h1, html.theme-dark h2, html.theme-dark h3,
