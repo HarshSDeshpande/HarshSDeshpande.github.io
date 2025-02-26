@@ -140,6 +140,35 @@ html.theme-dark h4, html.theme-dark h5, html.theme-dark h6 {
   color: #f8fafc;
 }
 
+/* Dark mode for posts */
+html.theme-dark .post {
+  background-color: #0f172a;
+}
+
+html.theme-dark .page-title,
+html.theme-dark .post-title,
+html.theme-dark .post-title a {
+  color: #f8fafc;
+}
+
+html.theme-dark .post-date {
+  color: #94a3b8;
+}
+
+/* Dark mode for social links */
+html.theme-dark .social-links a {
+  color: #94a3b8;
+}
+
+html.theme-dark .social-links a:hover {
+  color: #38bdf8;
+}
+
+/* Dark mode for images in posts */
+html.theme-dark .post img {
+  filter: brightness(0.9);
+}
+
 html.theme-dark a {
   color: #38bdf8;
 }
