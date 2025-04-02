@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Stuff I'm Reading (Particularly in Mechanistic Interpretability)
+title: Stuff I'm Reading
 url: mechanistic_interpretability_resources
 ---
 
-These are some resources I am currently going through to learn about mechanistic interpretability.
+These are some resources I am currently going through to learn about mechanistic interpretability. (Disclaimer: I don't know if the "mechanisms" are real, but hey what's the harm in learning something new ig ) 
 
 - [Neel Nanda's Website](https://www.neelnanda.io/mechanistic-interpretability)
 - [Anthropic's Transformer Circuit Threads](https://transformer-circuits.pub/)
 - [ARENA 3.0 course](https://arena3-chapter1-transformer-interp.streamlit.app/)
 
-This is just some random stuff I'm working on out of interest in Mechanistic Interpretability.
+This is just some random stuff I've worked on (mostly for self-learning purposes).
 
 - [Implementing a Transformer from Scratch](https://github.com/HarshSDeshpande/transformer_from_scratch)
 - [Reverse-engineering Induction Circuits](https://github.com/HarshSDeshpande/induction_circuits)
