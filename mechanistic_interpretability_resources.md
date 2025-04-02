@@ -4,7 +4,7 @@ title: Stuff I'm Reading
 url: mechanistic_interpretability_resources
 ---
 
-These are some resources I am currently going through to learn about mechanistic interpretability. (Disclaimer: I don't know if the "mechanisms" are real, but hey what's the harm in learning something new ig ) 
+These are some resources I am currently going through to learn about mechanistic interpretability.
 
 - [Neel Nanda's Website](https://www.neelnanda.io/mechanistic-interpretability)
 - [Anthropic's Transformer Circuit Threads](https://transformer-circuits.pub/)
